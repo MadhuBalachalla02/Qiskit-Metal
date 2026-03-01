@@ -1,0 +1,68 @@
+{
+  "gmsh_physical_groups": {
+    "1": {
+      "Q1_coupler_wire_sfs": 1,
+      "cpw_trace_sfs": 2,
+      "Q1_pad_top_sfs": 3,
+      "Q1_pad_bot_sfs": 4,
+      "Q1_coupler_connector_pad_sfs": 5,
+      "Q1_rect_jj": 6,
+      "ground_plane_(layer 1)_sfs": 7
+    },
+    "3": {
+      "dielectric_(layer 3)": 8,
+      "dielectric_(layer 3)_sfs": 9
+    },
+    "global": {
+      "vacuum_box": 10,
+      "vacuum_box_sfs": 11
+    }
+  },
+  "_conductors": {
+    "gnd": [
+      "Q1_coupler_wire",
+      "cpw_trace",
+      "Q1_coupler_connector_pad"
+    ],
+    "0": [
+      "Q1_pad_top"
+    ],
+    "1": [
+      "Q1_pad_bot"
+    ]
+  },
+  "_inductive_ports": {
+    "Q1": {
+      "bnd_spec": "Q1_rect_jj",
+      "inductance": 1e-08,
+      "length": 0.029999999999999995,
+      "width": 0.02,
+      "dir": "y"
+    }
+  },
+  "sample_holder": true,
+  "qtcad_options": {
+    "adaptive": true,
+    "adaptive_mesh_scale": 0.001,
+    "output_dir": "E:\\x\\qiskit_metal\\289_Project\\output\\t8_eig",
+    "geo_filepath": "E:\\x\\qiskit_metal\\289_Project\\output\\t8_eig/t8_eig.xao",
+    "mesh_filepath": "E:\\x\\qiskit_metal\\289_Project\\output\\t8_eig/t8_eig.msh4",
+    "mesh_scale": 0.001,
+    "make_subdir": false,
+    "capacitance": {
+      "tol_rel": 0.05,
+      "tol_abs": 0.0,
+      "min_converged_iters": 3
+    },
+    "capacitance_raw": null,
+    "maxwell_emode": {
+      "num_modes": 2,
+      "tol_rel": 0.05,
+      "min_converged_iters": 5
+    },
+    "maxwell_emode_raw": null
+  },
+  "cap_refined_mesh_file": null,
+  "eig_refined_mesh_file": "E:\\x\\qiskit_metal\\289_Project\\output\\t8_eig\\qtcad-refined-mesh.msh4",
+  "eig_field_file": "E:\\x\\qiskit_metal\\289_Project\\output\\t8_eig\\qtcad-fields.vtu"
+}
