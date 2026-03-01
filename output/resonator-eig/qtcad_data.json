@@ -1,0 +1,47 @@
+{
+  "gmsh_physical_groups": {
+    "1": {
+      "readout_trace_sfs": 1,
+      "ground_plane_(layer 1)_sfs": 2
+    },
+    "3": {
+      "dielectric_(layer 3)": 3,
+      "dielectric_(layer 3)_sfs": 4
+    },
+    "global": {
+      "vacuum_box": 5,
+      "vacuum_box_sfs": 6
+    }
+  },
+  "_conductors": {
+    "gnd": [
+      "readout_trace"
+    ]
+  },
+  "_inductive_ports": {},
+  "sample_holder": true,
+  "qtcad_options": {
+    "adaptive": true,
+    "adaptive_mesh_scale": 0.001,
+    "output_dir": "E:\\x\\qiskit_metal\\289_Project\\output\\resonator-eig",
+    "geo_filepath": "E:\\x\\qiskit_metal\\289_Project\\output\\resonator-eig/resonator-eig.xao",
+    "mesh_filepath": "E:\\x\\qiskit_metal\\289_Project\\output\\resonator-eig/resonator-eig.msh4",
+    "mesh_scale": 0.001,
+    "make_subdir": false,
+    "capacitance": {
+      "tol_rel": 0.05,
+      "tol_abs": 0.0,
+      "min_converged_iters": 3
+    },
+    "capacitance_raw": null,
+    "maxwell_emode": {
+      "num_modes": 3,
+      "tol_rel": 0.05,
+      "min_converged_iters": 5
+    },
+    "maxwell_emode_raw": null
+  },
+  "cap_refined_mesh_file": null,
+  "eig_refined_mesh_file": "E:\\x\\qiskit_metal\\289_Project\\output\\resonator-eig\\qtcad-refined-mesh.msh4",
+  "eig_field_file": "E:\\x\\qiskit_metal\\289_Project\\output\\resonator-eig\\qtcad-fields.vtu"
+}

@@ -1,0 +1,9 @@
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore large QTCAD binary/mesh files
+*.msh4
+*.vtu
+*.xao
+
+# We are tracking .pickle, .json, and .csv files by not listing them here
