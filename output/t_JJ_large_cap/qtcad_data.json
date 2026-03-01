@@ -1,0 +1,74 @@
+{
+  "gmsh_physical_groups": {
+    "1": {
+      "Q1_coupler_wire_sfs": 1,
+      "cpw_trace_sfs": 2,
+      "Q1_pad_top_sfs": 3,
+      "Q1_pad_bot_sfs": 4,
+      "Q1_coupler_connector_pad_sfs": 5,
+      "open_to_ground_launch_pad_sfs": 6,
+      "open_to_ground_ind_stub_sfs": 7,
+      "ground_plane_(layer 1)_sfs": 8
+    },
+    "3": {
+      "dielectric_(layer 3)": 9,
+      "dielectric_(layer 3)_sfs": 10
+    },
+    "global": {
+      "vacuum_box": 11,
+      "vacuum_box_sfs": 12
+    }
+  },
+  "_conductors": {
+    "gnd": [],
+    "0": [
+      "Q1_coupler_wire",
+      "cpw_trace",
+      "Q1_coupler_connector_pad",
+      "open_to_ground_ind_stub"
+    ],
+    "1": [
+      "Q1_pad_top"
+    ],
+    "2": [
+      "Q1_pad_bot"
+    ],
+    "3": [
+      "open_to_ground_launch_pad"
+    ]
+  },
+  "_inductive_ports": {
+    "Q1": {
+      "bnd_spec": null,
+      "inductance": null,
+      "length": null,
+      "width": null,
+      "dir": null
+    }
+  },
+  "sample_holder": true,
+  "qtcad_options": {
+    "adaptive": true,
+    "adaptive_mesh_scale": 0.001,
+    "output_dir": "E:\\x\\qiskit_metal\\289_Project\\output\\t_JJ_large_cap",
+    "geo_filepath": "E:\\x\\qiskit_metal\\289_Project\\output\\t_JJ_large_cap/t_JJ_large_cap.xao",
+    "mesh_filepath": "E:\\x\\qiskit_metal\\289_Project\\output\\t_JJ_large_cap/t_JJ_large_cap.msh4",
+    "mesh_scale": 0.001,
+    "make_subdir": false,
+    "capacitance": {
+      "tol_rel": 0.05,
+      "tol_abs": 0.0,
+      "min_converged_iters": 3
+    },
+    "capacitance_raw": null,
+    "maxwell_emode": {
+      "num_modes": 3,
+      "tol_rel": 0.05,
+      "min_converged_iters": 5
+    },
+    "maxwell_emode_raw": null
+  },
+  "cap_refined_mesh_file": "E:\\x\\qiskit_metal\\289_Project\\output\\t_JJ_large_cap\\qtcad-refined-mesh.msh4",
+  "eig_refined_mesh_file": null,
+  "eig_field_file": null
+}
