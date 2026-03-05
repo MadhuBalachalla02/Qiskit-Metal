@@ -34,9 +34,9 @@
   "_inductive_ports": {
     "Q1": {
       "bnd_spec": "Q1_rect_jj",
-      "inductance": 1.02e-08,
-      "length": 0.029699999999999997,
-      "width": 0.0198,
+      "inductance": 1.078e-08,
+      "length": 0.029999999999999995,
+      "width": 0.02,
       "dir": "y"
     }
   },

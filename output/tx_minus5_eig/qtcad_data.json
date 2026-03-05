@@ -6,53 +6,47 @@
       "Q1_pad_top_sfs": 3,
       "Q1_pad_bot_sfs": 4,
       "Q1_coupler_connector_pad_sfs": 5,
-      "open_to_ground_launch_pad_sfs": 6,
-      "open_to_ground_ind_stub_sfs": 7,
-      "ground_plane_(layer 1)_sfs": 8
+      "Q1_rect_jj": 6,
+      "ground_plane_(layer 1)_sfs": 7
     },
     "3": {
-      "dielectric_(layer 3)": 9,
-      "dielectric_(layer 3)_sfs": 10
+      "dielectric_(layer 3)": 8,
+      "dielectric_(layer 3)_sfs": 9
     },
     "global": {
-      "vacuum_box": 11,
-      "vacuum_box_sfs": 12
+      "vacuum_box": 10,
+      "vacuum_box_sfs": 11
     }
   },
   "_conductors": {
-    "gnd": [],
-    "0": [
+    "gnd": [
       "Q1_coupler_wire",
       "cpw_trace",
-      "Q1_coupler_connector_pad",
-      "open_to_ground_ind_stub"
+      "Q1_coupler_connector_pad"
     ],
-    "1": [
+    "0": [
       "Q1_pad_top"
     ],
-    "2": [
+    "1": [
       "Q1_pad_bot"
-    ],
-    "3": [
-      "open_to_ground_launch_pad"
     ]
   },
   "_inductive_ports": {
     "Q1": {
-      "bnd_spec": null,
-      "inductance": null,
-      "length": null,
-      "width": null,
-      "dir": null
+      "bnd_spec": "Q1_rect_jj",
+      "inductance": 1e-08,
+      "length": 0.029999999999999995,
+      "width": 0.02,
+      "dir": "y"
     }
   },
   "sample_holder": true,
   "qtcad_options": {
     "adaptive": true,
     "adaptive_mesh_scale": 0.001,
-    "output_dir": "E:\\x\\qiskit_metal\\289_Project\\output\\tx_minus5_eig",
-    "geo_filepath": "E:\\x\\qiskit_metal\\289_Project\\output\\tx_minus5_eig/tx_minus5_eig.xao",
-    "mesh_filepath": "E:\\x\\qiskit_metal\\289_Project\\output\\tx_minus5_eig/tx_minus5_eig.msh4",
+    "output_dir": "E:\\x\\qiskit_metal\\289_Project\\output\\tx_minus5_cap",
+    "geo_filepath": "E:\\x\\qiskit_metal\\289_Project\\output\\tx_minus5_cap/tx_minus5_cap.xao",
+    "mesh_filepath": "E:\\x\\qiskit_metal\\289_Project\\output\\tx_minus5_cap/tx_minus5_cap.msh4",
     "mesh_scale": 0.001,
     "make_subdir": false,
     "capacitance": {
@@ -62,13 +56,13 @@
     },
     "capacitance_raw": null,
     "maxwell_emode": {
-      "num_modes": 3,
+      "num_modes": 2,
       "tol_rel": 0.05,
       "min_converged_iters": 5
     },
     "maxwell_emode_raw": null
   },
-  "cap_refined_mesh_file": "E:\\x\\qiskit_metal\\289_Project\\output\\tx_minus5_eig\\qtcad-refined-mesh.msh4",
-  "eig_refined_mesh_file": null,
-  "eig_field_file": null
+  "cap_refined_mesh_file": null,
+  "eig_refined_mesh_file": "E:\\x\\qiskit_metal\\289_Project\\output\\tx_minus5_cap\\qtcad-refined-mesh.msh4",
+  "eig_field_file": "E:\\x\\qiskit_metal\\289_Project\\output\\tx_minus5_cap\\qtcad-fields.vtu"
 }
